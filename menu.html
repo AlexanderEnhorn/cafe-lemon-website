@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -30,42 +29,85 @@
 
     <main>
       <section class="menu-hero">
-        <h1>Vår Meny</h1>
-        <p>Upptäck vårt utsökta utbud av drycker och bakverk</p>
+        <div class="hero-content">
+          <h1>Vår Meny</h1>
+          <p class="hero-text">
+            Upptäck vårt utsökta utbud av drycker och bakverk
+          </p>
+        </div>
       </section>
 
       <section class="menu-container">
         <!-- Varma Drycker -->
         <div class="menu-category">
           <h2><span class="emoji">☕</span> Varma Drycker</h2>
-
-          <div class="menu-item">
-            <img
-              src="images/coffee-lemon.jpg"
-              alt="Café Lemon Special"
-              class="menu-img"
-            />
-            <div class="menu-text">
-              <h3 class="menu-item-name">Café Lemon Special</h3>
-              <p class="menu-item-desc">
-                Bryggkaffe med färsk citron och honung
-              </p>
-              <span class="price">39 kr</span>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/coffee-lemon.jpg"
+                  alt="Café Lemon Special"
+                  class="menu-img"
+                />
+                <span class="price-badge">39 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Café Lemon Special</h3>
+                <p class="menu-item-desc">
+                  Bryggkaffe med färsk citron och honung
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="menu-item">
-            <img
-              src="images/hot-chocolate.jpg"
-              alt="Chokladmugg"
-              class="menu-img"
-            />
-            <div class="menu-text">
-              <h3 class="menu-item-name">Chokladmugg Deluxe</h3>
-              <p class="menu-item-desc">
-                Varm choklad med vispad grädde och malda hasselnötter
-              </p>
-              <span class="price">49 kr</span>
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/hot-chocolate.jpg"
+                  alt="Chokladmugg"
+                  class="menu-img"
+                />
+                <span class="price-badge">49 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Chokladmugg Deluxe</h3>
+                <p class="menu-item-desc">
+                  Varm choklad med vispad grädde och malda hasselnötter
+                </p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/cappuccino.jpg"
+                  alt="Cappuccino"
+                  class="menu-img"
+                />
+                <span class="price-badge">45 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Italiensk Cappuccino</h3>
+                <p class="menu-item-desc">
+                  Klassisk cappuccino med luftig mjölkskum
+                </p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/chai-latte.jpg"
+                  alt="Chai Latte"
+                  class="menu-img"
+                />
+                <span class="price-badge">42 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Kryddig Chai Latte</h3>
+                <p class="menu-item-desc">
+                  Kryddig te med varm mjölk och honung
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -73,22 +115,63 @@
         <!-- Kalla Drycker -->
         <div class="menu-category">
           <h2><span class="emoji">🧊</span> Kalla Drycker</h2>
-
-          <div class="menu-item">
-            <img src="images/lemonade.jpg" alt="Lemonad" class="menu-img" />
-            <div class="menu-text">
-              <h3 class="menu-item-name">Signatur Lemonad</h3>
-              <p class="menu-item-desc">Hemgjord med färsk citron och mynta</p>
-              <span class="price">45 kr</span>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img src="images/lemonade.jpg" alt="Lemonad" class="menu-img" />
+                <span class="price-badge">45 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Signatur Lemonad</h3>
+                <p class="menu-item-desc">
+                  Hemgjord med färsk citron och mynta
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="menu-item">
-            <img src="images/iced-tea.jpg" alt="Isad te" class="menu-img" />
-            <div class="menu-text">
-              <h3 class="menu-item-name">Isad Citronte</h3>
-              <p class="menu-item-desc">Kall te med citron och limeskal</p>
-              <span class="price">42 kr</span>
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img src="images/iced-tea.jpg" alt="Isad te" class="menu-img" />
+                <span class="price-badge">42 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Isad Citronte</h3>
+                <p class="menu-item-desc">Kall te med citron och limeskal</p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/iced-coffee.jpg"
+                  alt="Iskaffe"
+                  class="menu-img"
+                />
+                <span class="price-badge">48 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Kallpressat Iskaffe</h3>
+                <p class="menu-item-desc">
+                  Kallbryggt kaffe med mjölk och sockerlag
+                </p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/smoothie.jpg"
+                  alt="Smoothie"
+                  class="menu-img"
+                />
+                <span class="price-badge">52 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Bärsmoothie</h3>
+                <p class="menu-item-desc">
+                  Blandning av jordgubbar, hallon och blåbär
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -96,24 +179,109 @@
         <!-- Bakverk -->
         <div class="menu-category">
           <h2><span class="emoji">🍰</span> Bakverk</h2>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/lemon-pie.jpg"
+                  alt="Citronpaj"
+                  class="menu-img"
+                />
+                <span class="price-badge">55 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Citronpaj Classic</h3>
+                <p class="menu-item-desc">
+                  Med färska citroner och lätt vispgrädde
+                </p>
+              </div>
+            </div>
 
-          <div class="menu-item">
-            <img src="images/lemon-pie.jpg" alt="Citronpaj" class="menu-img" />
-            <div class="menu-text">
-              <h3 class="menu-item-name">Citronpaj Classic</h3>
-              <p class="menu-item-desc">
-                Med färska citroner och lätt vispgrädde
-              </p>
-              <span class="price">55 kr</span>
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/croissant.jpg"
+                  alt="Croissant"
+                  class="menu-img"
+                />
+                <span class="price-badge">45 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Mandelmånad</h3>
+                <p class="menu-item-desc">
+                  Fransk croissant med mandelfyllning
+                </p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/cinnamon-bun.jpg"
+                  alt="Kanelbulle"
+                  class="menu-img"
+                />
+                <span class="price-badge">38 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Hembakad Kanelbulle</h3>
+                <p class="menu-item-desc">Klassisk kanelbulle med pärlsocker</p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/chocolate-cake.jpg"
+                  alt="Chokladkaka"
+                  class="menu-img"
+                />
+                <span class="price-badge">59 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Decadent Chokladkaka</h3>
+                <p class="menu-item-desc">Mörk choklad med hallonfyllning</p>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="menu-item">
-            <img src="images/croissant.jpg" alt="Croissant" class="menu-img" />
-            <div class="menu-text">
-              <h3 class="menu-item-name">Mandelmånad</h3>
-              <p class="menu-item-desc">Fransk croissant med mandelfyllning</p>
-              <span class="price">45 kr</span>
+        <!-- Frukost -->
+        <div class="menu-category">
+          <h2><span class="emoji">🍳</span> Frukost</h2>
+          <div class="menu-items-grid">
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/avocado-toast.jpg"
+                  alt="Avocadotoast"
+                  class="menu-img"
+                />
+                <span class="price-badge">75 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Avocadotoast</h3>
+                <p class="menu-item-desc">
+                  Surdegsbröd med avocado, cherrytomater och ruccola
+                </p>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-img-container">
+                <img
+                  src="images/yogurt-bowl.jpg"
+                  alt="Yoghurt"
+                  class="menu-img"
+                />
+                <span class="price-badge">65 kr</span>
+              </div>
+              <div class="menu-text">
+                <h3 class="menu-item-name">Yoghurt Bowl</h3>
+                <p class="menu-item-desc">
+                  Grekisk yoghurt med granola och färska bär
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -132,5 +300,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
