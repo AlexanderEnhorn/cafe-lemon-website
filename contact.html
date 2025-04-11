@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
+    <meta charset="UTF-8" />
+    <title>Kontakta oss - Café Lemon</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontakta oss - Café Lemon</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
       <div class="navbar-container">
         <div class="logo">
-          <img src="images/lemon-logo.svg" alt="Café Lemon Logo" />
+          <img src="Images/cafelemon2.jpg" alt="Café Lemon Logo" />
           <h1>Café Lemon</h1>
         </div>
+
         <nav class="main-nav">
           <a href="index.html" class="nav-link">Hem</a>
           <a href="menu.html" class="nav-link">Meny</a>
@@ -29,32 +29,133 @@
     </header>
 
     <main>
-      <section class="contact-hero">
+      <section class="hero contact-hero">
         <div class="hero-content">
           <h1>Kontakta Café Lemon</h1>
           <p class="hero-text">Vi vill gärna höra från dig!</p>
         </div>
       </section>
 
-      <div class="contact-container">
-        <section class="contact-info">
-          <div class="info-card">
-            <h3><span class="icon">📌</span> Besök oss</h3>
-            <p>Drömlokalen 42<br />123 45 Framtidsstaden</p>
+      <section class="contact-container highlights">
+        <h2 class="visually-hidden">Kontaktinformation</h2>
+
+        <div class="highlight-items">
+          <div class="highlight-card info-card">
+            <div class="menu-img-container">
+              <img
+                src="images/location.jpg"
+                alt="Café Lemon plats"
+                class="menu-img"
+              />
+            </div>
+            <div class="menu-text">
+              <h3><span class="icon">📌</span> Besök oss</h3>
+              <p>Drömlokalen 42<br />123 45 Framtidsstaden</p>
+              <p class="opening-hours">
+                <strong>Öppettider:</strong><br />
+                Mån–Fre: 08:00–18:00<br />
+                Lör–Sön: 10:00–16:00
+              </p>
+            </div>
           </div>
 
-          <div class="info-card">
-            <h3><span class="icon">📞</span> Ring oss</h3>
-            <p>070-123 45 67</p>
+          <div class="highlight-card info-card">
+            <div class="menu-img-container">
+              <img
+                src="images/phone-contact.jpg"
+                alt="Kontakta oss"
+                class="menu-img"
+              />
+            </div>
+            <div class="menu-text">
+              <h3><span class="icon">📞</span> Ring oss</h3>
+              <p>070-123 45 67</p>
+              <p class="contact-note">
+                För större bokningar eller catering, vänligen ring oss direkt.
+              </p>
+            </div>
           </div>
 
-          <div class="info-card">
-            <h3><span class="icon">✉️</span> E-post</h3>
-            <p>info@cafelemon.dröm</p>
+          <div class="highlight-card info-card">
+            <div class="menu-img-container">
+              <img
+                src="images/email-contact.jpg"
+                alt="E-post kontakt"
+                class="menu-img"
+              />
+            </div>
+            <div class="menu-text">
+              <h3><span class="icon">✉️</span> E-post</h3>
+              <p>info@cafelemon.dröm</p>
+              <p class="response-time">
+                Vi svarar vanligtvis inom 24 timmar på vardagar.
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div class="social-media">
+        <div class="contact-form menu-category">
+          <h2>Skicka ett meddelande</h2>
+          <form class="menu-item">
+            <div class="menu-text form-group">
+              <label for="name">Namn</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="form-input"
+                placeholder="Ditt namn"
+              />
+            </div>
+
+            <div class="menu-text form-group">
+              <label for="email">E-post</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="form-input"
+                placeholder="din@epost.domän"
+              />
+            </div>
+
+            <div class="menu-text form-group">
+              <label for="subject">Ämne</label>
+              <select id="subject" name="subject" class="form-input">
+                <option value="">Välj ämne</option>
+                <option value="booking">Bokning</option>
+                <option value="feedback">Feedback</option>
+                <option value="catering">Catering</option>
+                <option value="other">Övrigt</option>
+              </select>
+            </div>
+
+            <div class="menu-text form-group">
+              <label for="message">Meddelande</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="form-textarea"
+                placeholder="Ditt meddelande..."
+              ></textarea>
+            </div>
+
+            <div class="menu-text form-actions">
+              <button type="submit" class="cta-button">
+                Skicka meddelande
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="social-media highlight-card">
+          <div class="menu-text">
             <h3>Följ vår resa</h3>
+            <p>Håll dig uppdaterad med vårt senaste utbud och evenemang.</p>
             <div class="social-links">
               <a href="#" aria-label="Instagram">
                 <img src="images/instagram-icon.svg" alt="Instagram" />
@@ -64,40 +165,45 @@
               </a>
             </div>
           </div>
-        </section>
+          <div class="menu-img-container">
+            <img
+              src="images/social-media.jpg"
+              alt="Sociala medier"
+              class="menu-img"
+            />
+          </div>
+        </div>
+      </section>
 
-        <section class="contact-form">
-          <h2>Skicka ett meddelande</h2>
-          <form>
-            <div class="form-group">
-              <label for="name">Namn</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-
-            <div class="form-group">
-              <label for="email">E-post</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Meddelande</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="cta-button">Skicka</button>
-          </form>
-        </section>
-      </div>
+      <section class="map-section menu-category">
+        <h2>Hitta till oss</h2>
+        <div class="menu-item">
+          <div class="menu-img-container">
+            <img
+              src="images/map-placeholder.jpg"
+              alt="Karta till Café Lemon"
+              class="menu-img"
+            />
+          </div>
+          <div class="menu-text">
+            <h3>Lätt att hitta</h3>
+            <p>
+              Vi ligger mitt i hjärtat av stan, bara några minuters promenad
+              från centralstationen.
+            </p>
+            <p class="transport-options">
+              <strong>Kollektivtrafik:</strong> Buss 55 och 73, hållplats
+              "Drömlokalen"<br />
+              <strong>Parkering:</strong> Avgiftsfri parkering på gatan fram
+              till 18:00
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
       <div class="footer-content">
-        <button class="dark-mode-toggle">Dark Mode</button>
         <p>© 2024 Café Lemon | Drömsidan skapad med kärlek</p>
         <div class="social-links">
           <a href="#"

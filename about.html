@@ -2,20 +2,19 @@
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Om oss - Café Lemon</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header>
       <div class="navbar-container">
         <div class="logo">
-          <img src="images/lemon-logo.svg" alt="Café Lemon Logo" />
+          <img src="Images/cafelemon2.jpg" alt="Café Lemon Logo" />
           <h1>Café Lemon</h1>
         </div>
         <nav class="main-nav">
@@ -29,110 +28,139 @@
     </header>
 
     <main>
-      <section class="about-hero">
+      <section class="hero about-hero">
         <div class="hero-content">
           <h1>Vår Berättelse</h1>
-          <p>Från en dröm som liten till verklighet</p>
+          <p class="hero-text">
+            En kärlekshistoria till kaffe, citron och gemenskap
+          </p>
         </div>
       </section>
 
-      <section class="founder-section">
-        <div class="founder-card">
-          <img
-            src="images/huzeyfe.jpg"
-            alt="Huzeyfe, grundare"
-            class="founder-img"
-          />
-          <div class="founder-bio">
-            <h2>Möt Huzeyfe</h2>
-            <p class="founder-title">Grundare & Kaffeentusiast</p>
-            <p>
-              Född och uppvuxen i Istanbul, Turkiet, har Huzeyfe alltid haft en
-              passion för autentisk kaffekultur. Hans barndomsminnen från de
-              traditionella turkiska kaféerna där tid stannade till, blev
-              grunden till Café Lemon.
-            </p>
-          </div>
-        </div>
-
-        <div class="journey-timeline">
-          <div class="timeline-item">
-            <div class="timeline-year">2015</div>
-            <div class="timeline-content">
-              <h3>Resan börjar</h3>
+      <section class="founder-section highlights">
+        <div class="highlight-items">
+          <div class="highlight-card founder-card" style="grid-column: 1 / -1">
+            <img
+              src="Images/huddetest.jpg"
+              alt="Huzeyfe 'Hudde', grundare"
+              class="founder-img"
+            />
+            <div class="founder-bio">
+              <h2>Hüzeyfe "Hudde" Dölek</h2>
+              <p class="founder-title">Grundare & Hjärtat Bakom Café Lemon</p>
               <p>
-                Huzeyfe flyttar till Sverige och upptäcker den unika svenska
-                fikakulturen. Idén om en fusion mellan turkisk och svensk
-                kaffetradition börjar växa.
+                Född och uppvuxen i Stockholm med starka rötter i Istanbul, har
+                Hudde alltid burit på en passion för autentiska smakupplevelser
+                och varm gästfrihet...
+              </p>
+              <p>
+                Tillsammans med sin fru Seanre har Hudde förverkligat en
+                livslång dröm...
               </p>
             </div>
           </div>
+        </div>
 
-          <div class="timeline-item">
-            <div class="timeline-year">2018</div>
-            <div class="timeline-content">
+        <div class="journey-timeline menu-category">
+          <h2>Vår Resa</h2>
+          <div class="timeline-item menu-item">
+            <div class="timeline-year price-badge">2010</div>
+            <div class="timeline-content menu-text">
+              <h3>Kärlekens och kaffets väg</h3>
+              <p>
+                Under en resa till Turkiet träffar Hudde sin blivande fru
+                Seanre...
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item menu-item">
+            <div class="timeline-year price-badge">2015</div>
+            <div class="timeline-content menu-text">
+              <h3>Från vision till verklighet</h3>
+              <p>Efter år av diskussioner och provbakningar i köket...</p>
+            </div>
+          </div>
+          <div class="timeline-item menu-item">
+            <div class="timeline-year price-badge">2018</div>
+            <div class="timeline-content menu-text">
               <h3>Första pop-up cafét</h3>
               <p>
-                Ett temporärt café under sommarfestivalen i Stockholm där
-                Huzeyfes citronkaffe blir en oväntad succé.
+                Sommaren 2018 testar paret konceptet under Stockholms
+                kulturfestival...
               </p>
             </div>
           </div>
-
-          <div class="timeline-item">
-            <div class="timeline-year">2024</div>
-            <div class="timeline-content">
-              <h3>Drömmen blir verklighet</h3>
+          <div class="timeline-item menu-item">
+            <div class="timeline-year price-badge">2024</div>
+            <div class="timeline-content menu-text">
+              <h3>Drömmen förverkligas</h3>
               <p>
-                Café Lemon öppnar sina dörrar med ambitionen att skapa en plats
-                där alla känner sig välkomna.
+                Efter renoveringar på Södermalm öppnar Café Lemon sina dörrar...
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="philosophy-section">
-        <div class="philosophy-card">
-          <img src="images/coffee-beans.jpg" alt="Kaffebönor" />
-          <div class="philosophy-content">
-            <h2>Vår Filosofi</h2>
-            <p>På Café Lemon kombinerar vi det bästa från två världar:</p>
+      <section class="philosophy-section menu-category">
+        <h2>Vår Filosofi</h2>
+        <div class="philosophy-card menu-item">
+          <div class="menu-img-container">
+            <img
+              src="Images/coffebeans.jpg"
+              alt="Kaffebönor"
+              class="menu-img"
+            />
+          </div>
+          <div class="philosophy-content menu-text">
+            <p>Café Lemon är mer än bara ett café - det är en livsstil:</p>
             <ul class="philosophy-list">
-              <li>Den turkiska traditionen av långsamt njutande</li>
-              <li>Den svenska mysigheten och enkelheten</li>
-              <li>Ekologiska ingredienser från lokala leverantörer</li>
               <li>
-                Innovativa smakkombinationer med citron som gemensam nämnare
+                <strong>Tidlös kvalitet:</strong> Turkiskt kaffe med moderna
+                bönor
               </li>
+              <li>
+                <strong>Innovation:</strong> Ny citroninspirerad smak varje
+                månad
+              </li>
+              <li><strong>Hantverk:</strong> Allt bakas för hand med kärlek</li>
+              <li><strong>Gemenskap:</strong> En plats för möten och samtal</li>
             </ul>
           </div>
         </div>
 
-        <div class="vision-box">
+        <div class="vision-box highlight-card">
           <h3>"Vår vision"</h3>
           <p class="vision-quote">
-            "Att skapa en oas där tradition möter innovation, och där varje
-            besök känns som en kram från en gammal vän."
+            "Vi tror på det lilla extras som gör vardagen till fest..."
           </p>
-          <p class="vision-author">- Huzeyfe, grundare</p>
+          <p class="vision-author">- Hudde & Seanre, grundare</p>
         </div>
       </section>
 
-      <section class="team-section">
-        <h2>Vårt Team</h2>
-        <div class="team-members">
-          <div class="team-card">
-            <img src="images/barista-1.jpg" alt="Sirvan, barista" />
+      <section class="team-section highlights">
+        <h2>Vårt Hjärta</h2>
+        <p class="team-intro">
+          Bakom varje lyckat café står ett passionerat team...
+        </p>
+        <div class="highlight-items">
+          <div class="highlight-card team-card">
+            <img src="Images/huddetest.jpg" alt="Sirvan, barista" />
             <h3>Sirvan</h3>
-            <p>Huvudbarista</p>
-            <p>"Jag älskar att skapa konst med kaffe och le med gästerna"</p>
+            <p>Huvudbarista & Kaffealchemist</p>
+            <p>"Jag fann en andra familj hos Café Lemon..."</p>
           </div>
-          <div class="team-card">
-            <img src="images/baker-1.jpg" alt="Mahmud, bagare" />
+          <div class="highlight-card team-card">
+            <img src="Images/huddetest.jpg" alt="Mahmud, bagare" />
             <h3>Mahmud</h3>
-            <p>Bagarmästare</p>
-            <p>"Min citronpaj är en hemlighet jag bara delar med Café Lemon"</p>
+            <p>Bagarmästare & Citronvirtuos</p>
+            <p>"Jag får ära min mormors recept varje dag..."</p>
+          </div>
+          <div class="highlight-card team-card">
+            <img src="Images/huddetest.jpg"Seanre, medgrundare" />
+            <h3>Seanre</h3>
+            <p>Medgrundare & Smakdesigner</p>
+            <p>"Vi skapar upplevelser som berör alla sinnen..."</p>
           </div>
         </div>
       </section>
@@ -140,8 +168,7 @@
 
     <footer>
       <div class="footer-content">
-        <button class="dark-mode-toggle">Dark Mode</button>
-        <p>© 2024 Café Lemon | Huzeyfes dröm blir verklighet</p>
+        <p>© 2024 Café Lemon | En kärlekshistoria skapad av Hudde & Seanre</p>
         <div class="social-links">
           <a href="#"
             ><img src="images/instagram-icon.svg" alt="Instagram"
